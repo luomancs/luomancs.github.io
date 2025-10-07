@@ -19,20 +19,20 @@
         font-size: 0.9rem;
         text-align: left;
     }
-
+        
     .subtitle {
         font-size: 1.5rem;
         text-align: left;
         font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
     }
-
+        
     .title {
         font-size: 1.8rem;
         text-align: left;
         font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
         font-weight: 450;
     }
-
+    
     .ttitle {
         font-size: 1.2rem;
         text-align: left;
@@ -50,24 +50,6 @@
         /* font-weight: bold; */
         text-align: center;
     }
-
-    /* Enhanced profile image styling */
-    .profile-img-enhanced {
-        width: 180px;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 4px solid white;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        margin: 10px 30px 10px 10px;
-    }
-
-    @media (max-width: 768px) {
-        .profile-img-enhanced {
-            width: 150px;
-            height: 150px;
-        }
-    }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149582119-2"></script>
@@ -75,7 +57,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
+    
       gtag('config', 'UA-149582119-2');
     </script>
 
@@ -86,37 +68,27 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <!-- Intro - Hero Section -->
-                <section style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); padding: 3rem 0; margin: -10px -15px 2rem -15px; border-radius: 12px;">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-md-4 text-center mb-4 mb-md-0">
-                            <img src="images/manluo4.PNG" alt="Man Luo" class="profile-img-enhanced">
+                <!-- Intro -->
+                <div>
+                    <div class="row">
+                        <div class="col-sm-3" align="middle">
+                            <img src="images/manluo4.PNG" alt="" class="figure-img img-fluid" alt="Responsive image" style="margin:0px;margin-top:10px;margin-bottom:10px">
                         </div>
-                        <div class="col-lg-9 col-md-8">
-                            <h1 style="font-size: 1.8rem; font-weight: 700; color: #1e293b; margin-bottom: 0.5rem; font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;">Man Luo (罗满)</h1>
-                            <p style="font-size: 1.2rem; color: #1e293b; font-weight: 600; margin-bottom: 1rem; font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;">Ph.D. • AI Research Scientist at Intel Lab</p>
-                            <p style="font-size: 1rem; color: #64748b; margin-bottom: 1.5rem; font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;">
-                                mluo26 [at] asu [dot] edu
-                            </p>
-                            <div style="font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;">
-                                <a href='https://scholar.google.com/citations?hl=en&user=RFeq08UAAAAJ' style="color: #64748b; font-size: 1rem; text-decoration: none; margin-right: 1.5rem; transition: color 0.3s ease;">Google Scholar</a>
-                                <a href='https://github.com/luomancs' style="color: #64748b; font-size: 1rem; text-decoration: none; margin-right: 1.5rem; transition: color 0.3s ease;">GitHub</a>
-                                <a href='https://www.linkedin.com/in/man-luo-a7aa57178/' style="color: #64748b; font-size: 1rem; text-decoration: none; margin-right: 1.5rem; transition: color 0.3s ease;">LinkedIn</a>
-                                <a href='Man_Luo_Resume.pdf' style="color: #64748b; font-size: 1rem; text-decoration: none; margin-right: 1.5rem; transition: color 0.3s ease;">CV</a>
-                            </div>
-
-                            <div style="text-align: left; margin: 1rem 0 2rem 0;">
-                                <a href="mock-interview.html" style="color: #dc2626; text-decoration: none; font-size: 1rem; font-weight: 500; font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;">
-                                    Want a Mock Interview for AI Research Scientist Job?
-                                </a>
-                            </div>
+                        <div class="col" style="margin-top: 15px; margin-bottom: auto; margin-left:5px">
+                            <header>
+                                <h3 class="title">Man Luo (罗满) </h3>
+                                <h3 class="ttitle">Ph.D.</h3>
+				                <div class="links">mluo26 [at] asu [dot] edu</h3>
+				                <div class="links">
+                                    <a href='https://scholar.google.com/citations?hl=en&user=RFeq08UAAAAJ'>Google Scholar</a> / 
+				                    <a href='https://github.com/luomancs'>Github</a> / 
+                                    <a href='https://www.linkedin.com/in/man-luo-a7aa57178/'>LinkedIn</a> / 
+                                    <a href='Man_Luo_Resume.pdf'>CV</a>
+                                </div>
+                            </header>
                         </div>
                     </div>
-                </section>
-
-                <!-- Mock Interview Service -->
-                
-
+                </div>
                 <!-- About Me -->
                 <hr>
                 <div>
@@ -130,7 +102,7 @@
                             <li><b>Knowledge Retrieval:</b> How can we effectively retrieve and utilize external knowledge to not only enhance comprehension but also mitigate hallucination?</li>
                             <li><b>Generalization:</b> Designing models that can seamlessly adapt and perform across various tasks and domains without explicit training.</li>
                             <li><b>Multimodal Understanding:</b> Delving into the integration of textual, visual, and other modalities to bolster machine comprehension and response capabilities.</li>
-                            <li><b>Biomedical/healthcare application and innovation:</b> Evaluate and innovate the LLMs to solve biomedical and healthcare challenges, such as long sequence processing, noisy data mitigation, data imbalance rectification, and enhancing interpretability.</li>
+                            <li><b>Biomedical/healthcare application and innovation:</b> Evaluate and innovate the LLMs to solve biomedical and healthcare challenges, such as long sequence processing, noisy data mitigation, data imbalance rectification, and enhancing interpretability.</li> 
                         </ul>
                     </p>
                     <p class="lead">
@@ -147,7 +119,7 @@
                             <li><span class="yyyymm">[2025.06]:</span> New paper <a href="https://arxiv.org/abs/2506.03095">DPO </a>Learning with LLMs-Judge Signal for Computer Use Agents.</li>
                             <li><span class="yyyymm">[2025.05]:</span> Our paper <a href="https://arxiv.org/pdf/2406.19593">SK-VQA</a> has been accepted to ICML 2025 Oral Presentation (less than 1%).</li>
                             <li><span class="yyyymm">[2025.05]:</span> Our paper <a href="https://arxiv.org/pdf/2412.03092">Revolve</a> has been accepted to ICML 2025.</li>
-                            <li><span class="yyyymm">[2025.03]:</span> New paper <a href="https://arxiv.org/pdf/2412.03092">FiVL</a> A Framework for Improved Vision-Language Alignment is out.</li>
+                            <li><span class="yyyymm">[2025.03]:</span> New paper <a href="https://arxiv.org/pdf/2412.03092">FiVL</a> A Framework for Improved Vision-Language Alignment is out.</li>    
                         </ul>
                     </div>
                     <div>
@@ -242,14 +214,14 @@
                     </div>
                 </div>
 
-
+                
                 <hr>
                 <div>
                     <h3 class="subtitle"> Publications</h3>
-
+                    
                     <div class="links">
-                        <a href='https://scholar.google.com/citations?hl=en&user=RFeq08UAAAAJ'>Full List of Publications</a>
-                    </div>
+                        <a href='https://scholar.google.com/citations?hl=en&user=RFeq08UAAAAJ'>Full List of Publications</a> 
+                    </div>  
                     <br>
                     <div class="row">
                         <div class="col" style="margin-top: auto; margin-bottom: auto;">
@@ -263,7 +235,7 @@
                         </div>
                     </div>
                     <div class="row">
-
+                        
                         <div class="col" style="margin-top: auto; margin-bottom: auto;">
                             <p class="lead">
                                 <span class="font-weight-bold">In-context Learning with Retrieved Demonstrations for Language Models: A Survey</span></br>
@@ -275,7 +247,7 @@
                     </div>
 
                     <div class="row">
-
+                        
                         <div class="col" style="margin-top: auto; margin-bottom: auto;">
                             <p class="lead">
                                 <span class="font-weight-bold">Improving Biomedical Information Retrieval with Neural Retrievers</span></br>
@@ -286,27 +258,27 @@
                         </div>
                     </div>
 
-
+                    
                     <div class="row">
-
+                        
                         <div class="col" style="margin-top: auto; margin-bottom: auto;">
                             <p class="lead">
-                                <span class="font-weight-bold">'Just because you are right, doesn't mean I am wrong': Overcoming a bottleneck in development and evaluation of Open-Ended VQA tasks</span></br>
+                                <span class="font-weight-bold">‘Just because you are right, doesn’t mean I am wrong’: Overcoming a bottleneck in development and evaluation of Open-Ended VQA tasks</span></br>
                                 <span class="font-weight-bold">Man Luo</span>, Shailaja Keyur Sampat, Riley Tallman, Yankai Zeng, Manuha Vancha, Akarshan Sajja, Chitta Baral</br>
                                 EACL 2021 </br>
-				                <a href='https://aclanthology.org/2021.eacl-main.240.pdf'>[Paper]</a>
+				                <a href='https://aclanthology.org/2021.eacl-main.240.pdf'>[Paper]</a> 
                                 <a href="https://github.com/luomancs/alternative_answer_set">[Code]</a>
                             </p>
                         </div>
                     </div>
                     <div class="row">
-
+                        
                         <div class="col" style="margin-top: auto; margin-bottom: auto;">
                             <p class="lead">
                                 <span class="font-weight-bold">Dr. ICL: Demonstration-Retrieved In-context Learning</span></br>
                                 <span class="font-weight-bold">Man Luo</span>, Xin Xu, Zhuyun Dai, Panupong Pasupat, Mehran Kazemi, Chitta Baral, Vaiva Imbrasaite, Vincent Y Zhao</br>
                                 Data Intelligence Journal 2024 </br>
-				                <a href='https://arxiv.org/abs/2305.14128'>[Paper]</a>
+				                <a href='https://arxiv.org/abs/2305.14128'>[Paper]</a> 
                             </p>
                         </div>
                     </div>
